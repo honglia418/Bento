@@ -21,8 +21,8 @@ setPosition();
 function setPosition(position) {
   // Here you can change your position
   // You can use https://www.latlong.net/ to get it! (I use San Francisco as an example)
-  let latitude = 42.3554;
-  let longitude = -71.1321;
+  let latitude = 42.3584;
+  let longitude =  -71.0598;
 
   getWeather(latitude, longitude);
 }
@@ -52,7 +52,7 @@ function getWeather(latitude, longitude) {
 
 // Display Weather info
 function displayWeather() {
-  iconElement.innerHTML = `<img src="icons/OneDark/${weather.iconId}.png"/>`;
+  iconElement.innerHTML = `<img src="icons/Nord/${weather.iconId}.png"/>`;
   tempElement.innerHTML = `${weather.temperature.value}°<span class="darkfg">${tempUnit}</span>`;
   descElement.innerHTML = weather.description;
 }
